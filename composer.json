@@ -1,0 +1,28 @@
+{
+    "name": "dipesh79/laravel-share",
+    "description": "Laravel Share - A simple laravel package to add share to social media link.",
+    "type": "library",
+    "license": "MIT",
+     "autoload": {
+        "psr-4": {
+            "Dipesh79\\LaravelShare\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dipesh79",
+            "email": "dipeshkhanal79@gmail.com",
+            "homepage": "https://www.khanaldipesh.com.np",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dipesh79\\LaravelShare\\LaravelShareServiceProvider"
+            ]
+        }
+    }
+}
