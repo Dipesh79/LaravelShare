@@ -99,6 +99,8 @@ This package provide the following platform sharing functionality.
 ```{{$share->linkedin()}}```
 - Pinterest
 ```{{$share->pinterest()}}```
+- WhatsApp
+```{{$share->whatsapp()}}```
 
 More Coming Soon...
 
