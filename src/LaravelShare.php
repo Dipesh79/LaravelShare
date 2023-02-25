@@ -2,53 +2,59 @@
 
 namespace Dipesh79\LaravelShare;
 
-class LaravelShare{
+class LaravelShare
+{
 
     public $url;
 
     public function __construct()
     {
-        $this->url=url()->current();
+        $this->url = url()->current();
     }
 
     public function facebook()
     {
-        return "https://www.facebook.com/sharer/sharer.php?u=".$this->url;
+        return "https://www.facebook.com/sharer/sharer.php?u=" . $this->url;
     }
 
     public function twitter()
     {
-        return "https://twitter.com/intent/tweet?url=".$this->url;
+        return "https://twitter.com/intent/tweet?url=" . $this->url;
     }
 
     public function pinterest()
     {
-        return "https://www.pinterest.com/pin/create/button/?url=".$this->url;
+        return "https://www.pinterest.com/pin/create/button/?url=" . $this->url;
     }
 
     public function linkedin()
     {
-        return "https://www.linkedin.com/sharing/share-offsite?mini=true&url=".$this->url;
+        return "https://www.linkedin.com/sharing/share-offsite?mini=true&url=" . $this->url;
     }
 
-      public function whatsapp()
+    public function whatsapp()
     {
-        return "https://api.whatsapp.com/send?text=".$this->url;
+        return "https://api.whatsapp.com/send?text=" . $this->url;
     }
 
     public function reddit()
     {
-        return "https://www.reddit.com/submit?url=".$this->url;
+        return "https://www.reddit.com/submit?url=" . $this->url;
     }
 
     public function telegram()
     {
-        return "https://t.me/share/url?url=".$this->url;
+        return "https://t.me/share/url?url=" . $this->url;
     }
 
     public function tumblr()
     {
-        return "https://tumblr.com/widgets/share/tool?canonicalUrl=".$this->url;
+        return "https://tumblr.com/widgets/share/tool?canonicalUrl=" . $this->url;
+    }
+
+    public function viber()
+    {
+        return "viber://forward?text=" . $this->url;
     }
 
 

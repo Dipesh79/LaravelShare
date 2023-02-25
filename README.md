@@ -107,7 +107,8 @@ This package provide the following platform sharing functionality.
   ```{{$share->telegram()}}```
 - Tumblr
   ```{{$share->tumblr()}}```
-
+- Viber
+  ```{{$share->viber()}}```
 
 More Coming Soon...
 
