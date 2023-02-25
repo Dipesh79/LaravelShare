@@ -46,5 +46,10 @@ class LaravelShare{
         return "https://t.me/share/url?url=".$this->url;
     }
 
+    public function tumblr()
+    {
+        return "https://tumblr.com/widgets/share/tool?canonicalUrl=".$this->url;
+    }
+
 
 }

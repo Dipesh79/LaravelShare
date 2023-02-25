@@ -105,6 +105,9 @@ This package provide the following platform sharing functionality.
 ```{{$share->reddit()}}```
 - Telegram
   ```{{$share->telegram()}}```
+- Tumblr
+  ```{{$share->tumblr()}}```
+
 
 More Coming Soon...
 
