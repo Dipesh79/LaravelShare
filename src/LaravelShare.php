@@ -30,7 +30,7 @@ class LaravelShare{
     {
         return "https://www.linkedin.com/sharing/share-offsite?mini=true&url=".$this->url;
     }
-    
+
       public function whatsapp()
     {
         return "https://api.whatsapp.com/send?text=".$this->url;
@@ -39,6 +39,11 @@ class LaravelShare{
     public function reddit()
     {
         return "https://www.reddit.com/submit?url=".$this->url;
+    }
+
+    public function telegram()
+    {
+        return "https://t.me/share/url?url=".$this->url;
     }
 
 

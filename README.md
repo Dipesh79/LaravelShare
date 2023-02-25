@@ -103,6 +103,8 @@ This package provide the following platform sharing functionality.
 ```{{$share->whatsapp()}}```
 - Reddit
 ```{{$share->reddit()}}```
+- Telegram
+  ```{{$share->telegram()}}```
 
 More Coming Soon...
 
