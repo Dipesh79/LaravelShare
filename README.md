@@ -109,6 +109,8 @@ This package provide the following platform sharing functionality.
   ```{{$share->tumblr()}}```
 - Viber
   ```{{$share->viber()}}```
+- Gmail
+    ```{{$share->gmail()}}```
 
 More Coming Soon...
 

@@ -57,5 +57,10 @@ class LaravelShare
         return "viber://forward?text=" . $this->url;
     }
 
+    public function gmail()
+    {
+        return "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=&body=".$this->url."&ui=2&tf=1&pli=1";
+    }
+
 
 }
