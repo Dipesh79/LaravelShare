@@ -101,10 +101,12 @@ This package provide the following platform sharing functionality.
 ```{{$share->pinterest()}}```
 - WhatsApp
 ```{{$share->whatsapp()}}```
+- Reddit
+```{{$share->reddit()}}```
 
 More Coming Soon...
 
-Contact Us we have missed any platform which is used mostly and it would be helpful to add that platfotm on this project.
+Contact Us we have missed any platform which is used mostly and it would be helpful to add that platform on this project.
 
 
 ## License

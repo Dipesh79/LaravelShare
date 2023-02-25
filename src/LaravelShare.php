@@ -36,5 +36,10 @@ class LaravelShare{
         return "https://api.whatsapp.com/send?text=".$this->url;
     }
 
+    public function reddit()
+    {
+        return "https://www.reddit.com/submit?url=".$this->url;
+    }
+
 
 }
