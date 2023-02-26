@@ -1,7 +1,7 @@
 
 # Laravel Share
 
-This Laravel package share the current url page to mutiple social media channel.
+This Laravel package share the current url page to multiple social media channel.
 
 
 ## Usage/Examples
@@ -111,10 +111,11 @@ This package provide the following platform sharing functionality.
   ```{{$share->viber()}}```
 - Gmail
     ```{{$share->gmail()}}```
-
+- Trello
+  ```{{$share->trello()}}```
 More Coming Soon...
 
-Contact Us we have missed any platform which is used mostly and it would be helpful to add that platform on this project.
+Contact Us we have missed any platform which is used mostly, and it would be helpful to add that platform on this project.
 
 
 ## License

@@ -62,5 +62,10 @@ class LaravelShare
         return "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=&body=".$this->url."&ui=2&tf=1&pli=1";
     }
 
+    public function trello()
+    {
+        return "https://trello.com/add-card?mode=popup&url=".$this->url."&desc=";
+    }
+
 
 }
