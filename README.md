@@ -106,6 +106,8 @@ This package provide the following platform sharing functionality.
   ```{{$share->gmail()}}```
 - Trello
   ```{{$share->trello()}}```
+- Facebook Messenger
+  ```{{$share->messenger()}}```
 
 More Coming Soon...
 
