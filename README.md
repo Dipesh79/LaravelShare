@@ -108,6 +108,8 @@ This package provide the following platform sharing functionality.
   ```{{$share->trello()}}```
 - Facebook Messenger
   ```{{$share->messenger()}}```
+- Skype
+```{{$share->skype()}}```
 
 More Coming Soon...
 
