@@ -1,25 +1,30 @@
-
 # Laravel Share
 
 This Laravel package share the current url page to multiple social media channel.
 
-
 ## Usage/Examples
+
 ### Install Using Composer
+
 ```javascript
-composer require dipesh79/laravel-share
+composer
+require
+dipesh79 / laravel - share
 ```
 
 ### Publish Vendor File
+
 ```
 php artisan vendor:publish --provider="Dipesh79\LaravelShare\LaravelShareServiceProvider"
 ```
-or 
+
+or
+
 ```
 php artisan vendor:publish
 ```
-And publish "Dipesh79\LaravelShare\LaravelShareServiceProvider"
 
+And publish "Dipesh79\LaravelShare\LaravelShareServiceProvider"
 
 Compact the Required Social Media Share Link to blade
 
@@ -31,7 +36,12 @@ public function index()
 {
   $share = new LaravelShare();
   $facebook_link = $share->facebook();
-
+  //This will share the current url
+  
+  OR
+  
+  $facebook_link = $share->facebook("custom_url");
+  /This will share the given url.
   //compact the share link to your blade
   return view('index',compact('facebook_link'));
 }
@@ -84,25 +94,25 @@ public function boot()
 
 ```
 
-Then you can use ```share``` variable in any blade file in the laravel project. Then simply do ```{{$share->facebook()}}``` to add respective social media share link in any blade file.
- 
+Then you can use ```share``` variable in any blade file in the laravel project. Then simply
+do ```{{$share->facebook()}}``` to add respective social media share link in any blade file.
 
 ## Currently Available Platform
 
 This package provide the following platform sharing functionality.
 
 - Facebook
-```{{$share->facebook()}}```
+  ```{{$share->facebook()}}```
 - Twitter
-```{{$share->twitter()}}```
+  ```{{$share->twitter()}}```
 - Linkedin
-```{{$share->linkedin()}}```
+  ```{{$share->linkedin()}}```
 - Pinterest
-```{{$share->pinterest()}}```
+  ```{{$share->pinterest()}}```
 - WhatsApp
-```{{$share->whatsapp()}}```
+  ```{{$share->whatsapp()}}```
 - Reddit
-```{{$share->reddit()}}```
+  ```{{$share->reddit()}}```
 - Telegram
   ```{{$share->telegram()}}```
 - Tumblr
@@ -110,23 +120,22 @@ This package provide the following platform sharing functionality.
 - Viber
   ```{{$share->viber()}}```
 - Gmail
-    ```{{$share->gmail()}}```
+  ```{{$share->gmail()}}```
 - Trello
   ```{{$share->trello()}}```
+
 More Coming Soon...
 
-Contact Us we have missed any platform which is used mostly, and it would be helpful to add that platform on this project.
-
+Contact Us we have missed any platform which is used mostly, and it would be helpful to add that platform on this
+project.
 
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-
 ## Author
 
 - [@Dipesh79](https://www.github.com/Dipesh79)
-
 
 ## Support
 

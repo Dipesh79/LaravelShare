@@ -7,9 +7,9 @@ class LaravelShare
 
     public $url;
 
-    public function __construct()
+    public function __construct($url)
     {
-        $this->url = url()->current();
+        $this->url = $url ? $url :  url()->current();
     }
 
     public function facebook()
