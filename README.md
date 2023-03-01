@@ -7,22 +7,7 @@ This Laravel package share the current url page to multiple social media channel
 ### Install Using Composer
 
 ```javascript
-
 composer require dipesh79/laravel-share
-
-
-```
-
-### Publish Vendor File
-
-```
-php artisan vendor:publish --provider="Dipesh79\LaravelShare\LaravelShareServiceProvider"
-```
-
-or
-
-```
-php artisan vendor:publish
 ```
 
 And publish "Dipesh79\LaravelShare\LaravelShareServiceProvider"
@@ -46,7 +31,6 @@ public function index()
   //compact the share link to your blade
   return view('index',compact('facebook_link'));
 }
-
 ```
 
 After sending the url to blade simply add the url to href tag.
@@ -68,7 +52,6 @@ public function index()
   //compact the share link to your blade
   return view('index',compact('share'));
 }
-
 ```
 
 After sending the url to blade simply add the url to href tag.
@@ -92,7 +75,6 @@ public function boot()
     $share = new LaravelShare();
     View::share('share',$share);
 }
-
 ```
 
 Then you can use ```share``` variable in any blade file in the laravel project. Then simply

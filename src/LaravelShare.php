@@ -7,64 +7,108 @@ class LaravelShare
 
     public $url;
 
-    public function __construct($url)
+    public function __construct()
     {
-        $this->url = $url ? $url :  url()->current();
+        $this->url = url()->current();
     }
 
-    public function facebook()
+    public function facebook($url=null)
     {
-        return "https://www.facebook.com/sharer/sharer.php?u=" . $this->url;
+        if ($url==null)
+        {
+            $url = $this->url;
+        }
+        return "https://www.facebook.com/sharer/sharer.php?u=" . $url;
     }
 
-    public function twitter()
+    public function twitter($url=null)
     {
-        return "https://twitter.com/intent/tweet?url=" . $this->url;
+        if ($url==null)
+        {
+            $url = $this->url;
+        }
+        return "https://twitter.com/intent/tweet?url=" . $url;
     }
 
-    public function pinterest()
+    public function pinterest($url=null)
     {
-        return "https://www.pinterest.com/pin/create/button/?url=" . $this->url;
+        if ($url==null)
+        {
+            $url = $this->url;
+        }
+        return "https://www.pinterest.com/pin/create/button/?url=" . $url;
     }
 
-    public function linkedin()
+    public function linkedin($url=null)
     {
-        return "https://www.linkedin.com/sharing/share-offsite?mini=true&url=" . $this->url;
+        if ($url==null)
+        {
+            $url = $this->url;
+        }
+        return "https://www.linkedin.com/sharing/share-offsite?mini=true&url=" . $url;
     }
 
-    public function whatsapp()
+    public function whatsapp($url=null)
     {
-        return "https://api.whatsapp.com/send?text=" . $this->url;
+        if ($url==null)
+        {
+            $url = $this->url;
+        }
+        return "https://api.whatsapp.com/send?text=" . $url;
     }
 
-    public function reddit()
+    public function reddit($url=null)
     {
-        return "https://www.reddit.com/submit?url=" . $this->url;
+        if ($url==null)
+        {
+            $url = $this->url;
+        }
+        return "https://www.reddit.com/submit?url=" .$url;
     }
 
-    public function telegram()
+    public function telegram($url=null)
     {
-        return "https://t.me/share/url?url=" . $this->url;
+        if ($url==null)
+        {
+            $url = $this->url;
+        }
+        return "https://t.me/share/url?url=" .$url;
     }
 
-    public function tumblr()
+    public function tumblr($url=null)
     {
-        return "https://tumblr.com/widgets/share/tool?canonicalUrl=" . $this->url;
+        if ($url==null)
+        {
+            $url = $this->url;
+        }
+        return "https://tumblr.com/widgets/share/tool?canonicalUrl=" . $url;
     }
 
-    public function viber()
+    public function viber($url=null)
     {
-        return "viber://forward?text=" . $this->url;
+        if ($url==null)
+        {
+            $url = $this->url;
+        }
+        return "viber://forward?text=" . $url;
     }
 
-    public function gmail()
+    public function gmail($url=null)
     {
-        return "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=&body=".$this->url."&ui=2&tf=1&pli=1";
+        if ($url==null)
+        {
+            $url = $this->url;
+        }
+        return "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=&body=".$url."&ui=2&tf=1&pli=1";
     }
 
-    public function trello()
+    public function trello($url=null)
     {
-        return "https://trello.com/add-card?mode=popup&url=".$this->url."&desc=";
+        if ($url==null)
+        {
+            $url = $this->url;
+        }
+        return "https://trello.com/add-card?mode=popup&url=".$url."&desc=";
     }
 
 
