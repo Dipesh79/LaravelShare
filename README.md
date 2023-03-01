@@ -7,7 +7,10 @@ This Laravel package share the current url page to multiple social media channel
 ### Install Using Composer
 
 ```javascript
-composer require dipesh79 / laravel - share
+
+composer require dipesh79/laravel-share
+
+
 ```
 
 ### Publish Vendor File
