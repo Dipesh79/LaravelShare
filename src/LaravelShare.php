@@ -7,64 +7,64 @@ class LaravelShare
 
     public $url;
 
-    public function __construct($url)
+    public function __construct()
     {
-        $this->url = $url ? $url :  url()->current();
+        $this->url = url()->current();
     }
 
-    public function facebook()
+    public function facebook($url)
     {
-        return "https://www.facebook.com/sharer/sharer.php?u=" . $this->url;
+        return "https://www.facebook.com/sharer/sharer.php?u=" . $url ? $url : $this->url;
     }
 
-    public function twitter()
+    public function twitter($url)
     {
-        return "https://twitter.com/intent/tweet?url=" . $this->url;
+        return "https://twitter.com/intent/tweet?url=" . $url ? $url : $this->url;
     }
 
-    public function pinterest()
+    public function pinterest($url)
     {
-        return "https://www.pinterest.com/pin/create/button/?url=" . $this->url;
+        return "https://www.pinterest.com/pin/create/button/?url=" . $url ? $url : $this->url;
     }
 
-    public function linkedin()
+    public function linkedin($url)
     {
-        return "https://www.linkedin.com/sharing/share-offsite?mini=true&url=" . $this->url;
+        return "https://www.linkedin.com/sharing/share-offsite?mini=true&url=" . $url ? $url : $this->url;
     }
 
-    public function whatsapp()
+    public function whatsapp($url)
     {
-        return "https://api.whatsapp.com/send?text=" . $this->url;
+        return "https://api.whatsapp.com/send?text=" . $url ? $url : $this->url;
     }
 
-    public function reddit()
+    public function reddit($url)
     {
-        return "https://www.reddit.com/submit?url=" . $this->url;
+        return "https://www.reddit.com/submit?url=" . $url ? $url : $this->url;
     }
 
-    public function telegram()
+    public function telegram($url)
     {
-        return "https://t.me/share/url?url=" . $this->url;
+        return "https://t.me/share/url?url=" . $url ? $url : $this->url;
     }
 
-    public function tumblr()
+    public function tumblr($url)
     {
-        return "https://tumblr.com/widgets/share/tool?canonicalUrl=" . $this->url;
+        return "https://tumblr.com/widgets/share/tool?canonicalUrl=" . $url ? $url : $this->url;
     }
 
-    public function viber()
+    public function viber($url)
     {
-        return "viber://forward?text=" . $this->url;
+        return "viber://forward?text=" . $url ? $url : $this->url;
     }
 
-    public function gmail()
+    public function gmail($url)
     {
-        return "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=&body=".$this->url."&ui=2&tf=1&pli=1";
+        return "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=&body=".$url ? $url : $this->url."&ui=2&tf=1&pli=1";
     }
 
-    public function trello()
+    public function trello($url)
     {
-        return "https://trello.com/add-card?mode=popup&url=".$this->url."&desc=";
+        return "https://trello.com/add-card?mode=popup&url=".$url ? $url : $this->url."&desc=";
     }
 
 
