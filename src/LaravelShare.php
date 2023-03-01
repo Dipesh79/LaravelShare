@@ -106,7 +106,14 @@ class LaravelShare
             $url = $this->url;
         }
         return "https://www.facebook.com/dialog/send?link=" . $url;
+    }
 
+    public function skype($url = null)
+    {
+        if ($url == null) {
+            $url = $this->url;
+        }
+        return "https://web.skype.com/share?url=" . $url;
     }
 
 
