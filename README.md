@@ -10,8 +10,6 @@ This Laravel package share the current url page to multiple social media channel
 composer require dipesh79/laravel-share
 ```
 
-And publish "Dipesh79\LaravelShare\LaravelShareServiceProvider"
-
 Compact the Required Social Media Share Link to blade
 
 ```
