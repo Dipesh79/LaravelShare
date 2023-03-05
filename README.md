@@ -110,6 +110,9 @@ This package provide the following platform sharing functionality.
   ```{{$share->messenger()}}```
 - Skype
 ```{{$share->skype()}}```
+- Tencent QQ
+```{{$share->qq()}}```
+
 
 More Coming Soon...
 

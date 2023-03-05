@@ -116,5 +116,13 @@ class LaravelShare
         return "https://web.skype.com/share?url=" . $url;
     }
 
+    public function qq($url = null)
+    {
+        if ($url == null) {
+            $url = $this->url;
+        }
+        return "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=" . $url;
+    }
+
 
 }
