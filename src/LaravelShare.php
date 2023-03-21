@@ -41,7 +41,7 @@ class LaravelShare
         if ($url == null) {
             $url = $this->url;
         }
-        return "https://www.linkedin.com/sharing/share-offsite?mini=true&url=" . $url;
+        return "https://www.linkedin.com/shareArticle?mini=true&url=" . $url;
     }
 
     public function whatsapp($url = null)
