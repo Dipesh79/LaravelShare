@@ -105,7 +105,7 @@ class LaravelShare
         if ($url == null) {
             $url = $this->url;
         }
-        return "https://www.facebook.com/dialog/send?link=" . $url;
+        return "https://www.facebook.com/dialog/send?link=" . $url. "&app_id=291494419107518&redirect_uri=" . url('/');
     }
 
     public function skype($url = null)
